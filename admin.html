@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="app-container">
+  <aside class="sidebar">
+    <div class="logo"><h2>👑 Admin Portal</h2></div>
+    <div class="nav-links">
+      <div class="nav-item active" data-admin-nav="overview"><i class="fas fa-chart-pie"></i> Overview</div>
+      <div class="nav-item" data-admin-nav="alltransactions"><i class="fas fa-globe"></i> All Transactions</div>
+      <div class="nav-item" data-admin-nav="analytics"><i class="fas fa-chart-line"></i> Analytics</div>
+      <div class="nav-item" id="logoutAdmin"><i class="fas fa-sign-out-alt"></i> Logout</div>
+    </div>
+    <div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i> Dark / Light</div>
+  </aside>
+  <main class="main-content" id="adminMainContent">
+    <!-- Admin dynamic content -->
+  </main>
+</div>
+<script src="admin.js"></script>
+</body>
+</html>
